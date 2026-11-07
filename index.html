@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#173c2d">
+  <meta name="description" content="Discover the Talkwithshile collection of herbal wellness, personal care, teas and cleansing products. Browse products and build an enquiry.">
+  <meta property="og:title" content="Talkwithshile — A more natural way to care">
+  <meta property="og:description" content="Explore the Talkwithshile herbal wellness collection and enquire about your favourites.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Talkwithshile | Herbal Wellness & Personal Care</title>
+</head>
+<body>
+  <svg class="svg-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-arrow-up-right" viewBox="0 0 24 24"><path d="M5 19 19 5M7 5h12v12"/></symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M4 12h16m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-bag" viewBox="0 0 24 24"><path d="M4 8h16l1 13H3L4 8Zm4 0V6a4 4 0 0 1 8 0v2"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M5 5 19 19M19 5 5 19"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M20 4C9 4 4 8.5 4 16a4 4 0 0 0 4 4c7.5 0 12-5 12-16ZM4.5 19.5 15 9"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.5 8.5c0 4.5-8.5 10.5-8.5 10.5S3.5 13 3.5 8.5a4.5 4.5 0 0 1 8.5-2 4.5 4.5 0 0 1 8.5 2Z"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 2 2.5 7.5L22 12l-7.5 2.5L12 22l-2.5-7.5L2 12l7.5-2.5L12 2Z"/></symbol>
+    <symbol id="i-message" viewBox="0 0 24 24"><path d="M20 11a8 8 0 0 1-8 8 8.4 8.4 0 0 1-3-.6L4 20l1.6-5A8 8 0 1 1 20 11Z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4.5 4.5L19 7"/></symbol>
+    <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M5 12h14M12 5v14"/></symbol>
+    <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4 7h16M9 7V4h6v3m3 0-1 13H7L6 7M10 11v5m4-5v5"/></symbol>
+    <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M12 20V4m-7 7 7-7 7 7"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="announcement"><div class="shell announcement-inner"><span><svg class="icon icon-small"><use href="#i-spark"></use></svg> YOUR SPACE FOR EVERYDAY WELLNESS</span><a href="#collection">Discover the collection <span aria-hidden="true">↗</span></a></div></div>
+
+  <header class="site-header" id="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="#home" aria-label="Talkwithshile, home">
+        <span class="brand-logo"><img src="assets/talkwithshile-logo.jpg" alt="" width="48" height="48"></span>
+        <span class="brand-type"><strong>Talkwithshile</strong><small>HERBAL WELLNESS</small></span>
+      </a>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#collection" class="nav-link">Shop collection</a>
+        <a href="#about" class="nav-link">Our story</a>
+        <a href="#approach" class="nav-link">Why Talkwithshile</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-button header-search" type="button" id="header-search" aria-label="Search products" title="Search products"><svg class="icon"><use href="#i-search"></use></svg></button>
+        <button class="bag-button" type="button" data-open-enquiry aria-label="Open enquiry list"><svg class="icon"><use href="#i-bag"></use></svg><span class="bag-label">Enquiry list</span><span class="bag-count" id="bag-count" aria-label="0 products">0</span></button>
+        <button class="icon-button menu-button" type="button" id="menu-button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><svg class="icon"><use href="#i-menu"></use></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-grain"></div>
+      <div class="shell hero-grid">
+        <div class="hero-content">
+          <div class="eyebrow hero-eyebrow"><span class="eyebrow-rule"></span> NATURE. WELLNESS. YOU.</div>
+          <h1 id="hero-title">A more <em>natural</em> way to care.</h1>
+          <p class="hero-lead">Welcome to Talkwithshile — a thoughtfully presented collection of herbal wellness and personal-care products for your everyday routine.</p>
+          <div class="hero-buttons">
+            <a href="#collection" class="button button-primary">Explore our products <svg class="icon"><use href="#i-arrow-up-right"></use></svg></a>
+            <a href="#about" class="text-link">Get to know us <svg class="icon"><use href="#i-arrow-right"></use></svg></a>
+          </div>
+          <div class="hero-bottom-line"><div class="tiny-leaves"><svg class="icon"><use href="#i-leaf"></use></svg></div><span>Discover, ask questions, and shop with clarity.</span></div>
+        </div>
+        <div class="hero-art" aria-label="Stylised Talkwithshile botanical product illustration" role="img">
+          <div class="art-halo art-halo-one"></div><div class="art-halo art-halo-two"></div>
+          <svg class="botanical botanical-left" viewBox="0 0 220 410" fill="none" aria-hidden="true"><path d="M132 402C148 303 148 192 66 40" stroke="#627c59" stroke-width="5" stroke-linecap="round"/><path d="M132 307C45 290 13 237 9 211c59-4 113 27 123 96Z" fill="#7a966e"/><path d="M127 274c58-55 61-99 58-117-52 14-79 59-58 117Z" fill="#8eaa7d"/><path d="M113 220C36 199 11 164 16 123c55 4 96 45 97 97Z" fill="#86a57a"/><path d="M101 171c51-67 45-117 35-134-40 25-58 77-35 134Z" fill="#a5b995"/><path d="M71 96C24 73 12 43 20 17c36 11 56 36 51 79Z" fill="#718b66"/></svg>
+          <svg class="botanical botanical-right" viewBox="0 0 220 410" fill="none" aria-hidden="true"><path d="M82 409C70 319 66 217 168 30" stroke="#627c59" stroke-width="5" stroke-linecap="round"/><path d="M80 333C24 279 17 216 31 194c45 24 72 79 49 139Z" fill="#718e68"/><path d="M82 274c94-14 128-75 122-108-55 0-109 47-122 108Z" fill="#8baa7f"/><path d="M91 219C44 160 47 100 66 83c37 33 47 83 25 136Z" fill="#95ac82"/><path d="M114 159c70-27 100-69 94-111-46 14-85 51-94 111Z" fill="#a8be96"/></svg>
+          <div class="hero-shadow"></div>
+          <div class="hero-plinth"></div>
+          <div class="hero-bottle"><span class="bottle-dropper"></span><span class="bottle-neck"></span><span class="bottle-body"><span class="bottle-label"><span class="label-deco">✳</span><span class="label-brand">TALKWITHSHILE</span><span class="label-divider"></span><span class="label-product">Herbal<br>Collection</span><span class="label-caption">THE WELLNESS EDIT</span></span></span></div>
+          <div class="hero-stamp"><span>MADE FOR</span><strong>YOUR<br>ROUTINE</strong><svg class="icon"><use href="#i-leaf"></use></svg></div>
+          <div class="hero-visual-label"><span>THE TALKWITHSHILE COLLECTION</span><span>01 / 03</span></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="promise-strip" aria-label="What you can do here"><div class="shell promise-grid">
+      <div class="promise"><svg class="icon"><use href="#i-leaf"></use></svg><div><strong>Discover the range</strong><span>Find products by category</span></div></div>
+      <div class="promise"><svg class="icon"><use href="#i-message"></use></svg><div><strong>Ask before you choose</strong><span>Enquire about product details</span></div></div>
+      <div class="promise"><svg class="icon"><use href="#i-heart"></use></svg><div><strong>Care on your terms</strong><span>Build a personalised enquiry</span></div></div>
+    </div></div>
+
+    <section class="collection section" id="collection" aria-labelledby="collection-heading">
+      <div class="shell">
+        <div class="section-topline"><span class="eyebrow eyebrow-dark">THE TALKWITHSHILE EDIT</span><span class="section-index">01 — OUR COLLECTION</span></div>
+        <div class="section-heading-wrap"><div><h2 id="collection-heading">Discover your <em>everyday essentials.</em></h2><p>Explore the range at your own pace. Select products to add to your enquiry list and request more information.</p></div><div class="section-aside"><span class="small-circle">✳</span><span>PRODUCTS CURATED<br>FOR YOUR ROUTINE</span></div></div>
+        <div class="collection-tools"><div id="category-filters" class="filter-tabs" role="group" aria-label="Filter products by category"><button type="button" class="filter-pill selected" data-filter="all" aria-pressed="true">All products <span id="total-pill">12</span></button><button type="button" class="filter-pill" data-filter="herbal" aria-pressed="false">Herbal blends</button><button type="button" class="filter-pill" data-filter="tea" aria-pressed="false">Teas & powders</button><button type="button" class="filter-pill" data-filter="cleansing" aria-pressed="false">Cleansing</button><button type="button" class="filter-pill" data-filter="personal" aria-pressed="false">Personal care</button></div>
+          <div class="search-sort"><label class="search-field" for="product-search"><svg class="icon"><use href="#i-search"></use></svg><input id="product-search" type="search" placeholder="Search the collection..." autocomplete="off" aria-label="Search products"></label><label class="sort-label" for="sort-products">Sort <select id="sort-products" aria-label="Sort products"><option value="featured">Featured</option><option value="az">Name: A to Z</option><option value="za">Name: Z to A</option></select></label></div>
+        </div>
+        <p class="result-count" id="result-count" aria-live="polite"></p>
+        <div id="product-grid" class="product-grid" aria-live="off"></div>
+        <div id="empty-results" class="empty-results" hidden><svg class="icon"><use href="#i-search"></use></svg><h3>Nothing matched your search.</h3><p>Try another name or switch to all products.</p><button type="button" class="button button-outline" id="clear-filters">Clear filters <svg class="icon"><use href="#i-arrow-right"></use></svg></button></div>
+        <div class="collection-note"><svg class="icon"><use href="#i-spark"></use></svg><p>Product names reflect the original catalogue. Please request ingredients, usage information, precautions, and availability before purchasing. No medical outcomes are promised.</p></div>
+      </div>
+    </section>
+
+    <section class="story section" id="about" aria-labelledby="story-heading"><div class="shell story-grid">
+      <div class="story-visual"><div class="story-card-back"></div><div class="story-card-front"><div class="story-card-text"><span class="story-card-monogram">TWS</span><span class="story-card-graphic">✳</span><span class="story-card-title">Wellness starts with <em>thoughtful choices.</em></span><span class="story-card-line"></span><span class="story-card-bottom">TALKWITHSHILE / EST. WITH PURPOSE</span></div></div><div class="story-caption">A LITTLE MORE OF WHAT MATTERS <span>↗</span></div></div>
+      <div class="story-copy"><span class="eyebrow eyebrow-dark">A NOTE FROM TALKWITHSHILE</span><h2 id="story-heading">A simpler way to explore <em>herbal living.</em></h2><p>Talkwithshile brings together a selection of herbal, cleansing, and personal-care products in one easy-to-explore place.</p><p>We believe product discovery should feel welcoming and transparent. Browse what interests you, build a list of questions, and enquire about a product’s ingredients, intended use, and precautions before making a decision.</p><div class="story-divider"></div><div class="story-signature"><svg class="icon"><use href="#i-leaf"></use></svg><div><strong>Explore with confidence</strong><span>Information first. Thoughtful choices always.</span></div></div><a href="#collection" class="text-link text-link-dark">Explore our collection <svg class="icon"><use href="#i-arrow-right"></use></svg></a></div>
+    </div></section>
+
+    <section class="approach section" id="approach" aria-labelledby="approach-heading"><div class="shell"><div class="approach-heading"><div><span class="eyebrow">OUR APPROACH</span><h2 id="approach-heading">Good choices begin <em>with good questions.</em></h2></div><p>Everything here is designed to make browsing simple and product enquiries clear.</p></div>
+      <div class="approach-grid"><article class="approach-card"><div class="approach-no">01 / DISCOVER</div><div class="approach-icon"><svg class="icon"><use href="#i-leaf"></use></svg></div><h3>Explore the collection</h3><p>See our range of herbal blends, teas, cleansing products and personal care in one place.</p><a href="#collection" aria-label="Explore products">Explore products <svg class="icon"><use href="#i-arrow-up-right"></use></svg></a></article><article class="approach-card"><div class="approach-no">02 / CHOOSE</div><div class="approach-icon"><svg class="icon"><use href="#i-bag"></use></svg></div><h3>Save what interests you</h3><p>Add as many products as you like to your enquiry list. No payment is needed.</p><button type="button" data-open-enquiry>View enquiry list <svg class="icon"><use href="#i-arrow-up-right"></use></svg></button></article><article class="approach-card"><div class="approach-no">03 / CONNECT</div><div class="approach-icon"><svg class="icon"><use href="#i-message"></use></svg></div><h3>Start a conversation</h3><p>Prepare a message to ask about stock, ingredients, usage guidance and other details.</p><button type="button" data-open-enquiry>Build an enquiry <svg class="icon"><use href="#i-arrow-up-right"></use></svg></button></article></div>
+    </div></section>
+
+    <section class="steps section" aria-labelledby="steps-heading"><div class="shell steps-grid"><div><span class="eyebrow eyebrow-dark">SIMPLE BY DESIGN</span><h2 id="steps-heading">From curiosity <em>to clarity.</em></h2><p>Browse the products, save the ones you want to know more about, then prepare a single message with your questions.</p><button type="button" class="button button-primary" data-open-enquiry>Start an enquiry <svg class="icon"><use href="#i-arrow-up-right"></use></svg></button></div><div class="step-list"><div class="step-row"><span>01</span><div><h3>Find your favourites</h3><p>Search or filter the product catalogue.</p></div><svg class="icon"><use href="#i-arrow-up-right"></use></svg></div><div class="step-row"><span>02</span><div><h3>Add to your list</h3><p>Keep product names together, even after a refresh.</p></div><svg class="icon"><use href="#i-arrow-up-right"></use></svg></div><div class="step-row"><span>03</span><div><h3>Share your questions</h3><p>Copy your message or share it using WhatsApp.</p></div><svg class="icon"><use href="#i-arrow-up-right"></use></svg></div></div></div></section>
+
+    <section class="faq section" id="faq" aria-labelledby="faq-heading"><div class="shell faq-grid"><div><span class="eyebrow eyebrow-dark">GOOD TO KNOW</span><h2 id="faq-heading">A few things <em>worth knowing.</em></h2><p>Need more information? Create an enquiry and ask about any item in the collection.</p></div><div class="faq-list"><details><summary>Can I pay for products on this website? <span aria-hidden="true">+</span></summary><p>Not yet. This site is a product catalogue and enquiry tool, not an online checkout. Prices, availability and payment arrangements should be confirmed directly with the business.</p></details><details><summary>Where can I find product ingredients and usage advice? <span aria-hidden="true">+</span></summary><p>Add the product to your enquiry list and request its full ingredient list, usage instructions, contraindications and other precautions. For medical concerns, consult a licensed healthcare professional.</p></details><details><summary>Will my enquiry list stay saved? <span aria-hidden="true">+</span></summary><p>Yes. Your selected products are saved in this browser on this device. They are not uploaded to a server.</p></details><details><summary>Does this website offer medical treatment? <span aria-hidden="true">+</span></summary><p>No. Product listings are informational and are not a diagnosis, treatment recommendation or guarantee of results. Do not replace professional medical care with products on this site.</p></details></div></div></section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-heading"><div class="shell contact-panel"><svg class="contact-leaf" viewBox="0 0 200 240" aria-hidden="true"><path d="M99 229C114 155 129 100 188 18M114 148C52 122 24 77 20 34c57 12 87 57 94 114ZM137 112C127 50 156 18 190 7c6 49-14 87-53 105Z" fill="none" stroke="currentColor" stroke-width="4"/><path d="M114 148C52 122 24 77 20 34c57 12 87 57 94 114ZM137 112C127 50 156 18 190 7c6 49-14 87-53 105Z" fill="currentColor" opacity=".2"/></svg><div><span class="eyebrow">LET'S CONNECT</span><h2 id="contact-heading">Have something <em>in mind?</em></h2><p>Build an enquiry with the products you're interested in. It's a simple way to start asking the right questions.</p></div><button type="button" class="button button-light" data-open-enquiry>Prepare an enquiry <svg class="icon"><use href="#i-arrow-up-right"></use></svg></button></div></section>
+  </main>
+
+  <footer class="footer"><div class="shell"><div class="footer-main"><div class="footer-brand"><a class="brand brand-footer" href="#home"><span class="brand-logo"><img src="assets/talkwithshile-logo.jpg" alt="" width="48" height="48"></span><span class="brand-type"><strong>Talkwithshile</strong><small>HERBAL WELLNESS</small></span></a><p>Discover the range. Ask your questions. Find a little more clarity in your everyday routine.</p></div><div class="footer-links"><div><h3>EXPLORE</h3><a href="#collection">All products</a><a href="#about">Our story</a><a href="#approach">Our approach</a></div><div><h3>SUPPORT</h3><a href="#faq">FAQs</a><button type="button" data-open-enquiry>Enquiry list</button><a href="#contact">Get in touch</a></div></div></div><div class="footer-bottom"><span>© <span id="footer-year">2026</span> Talkwithshile. All rights reserved.</span><span>Herbal wellness • Thoughtful living</span><a href="#home">Back to top ↑</a></div><p class="disclaimer">Products are not presented as cures or substitutes for professional medical advice. Please verify ingredients, directions, safety information and any applicable regulatory requirements before publication or use.</p></div></footer>
+
+  <button type="button" class="scroll-top" id="scroll-top" aria-label="Scroll back to top"><svg class="icon"><use href="#i-arrow-up"></use></svg></button>
+
+  <div class="overlay" id="overlay" hidden></div>
+  <aside class="enquiry-drawer" id="enquiry-drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-title" aria-hidden="true" tabindex="-1"><div class="drawer-header"><div><span class="eyebrow eyebrow-dark">YOUR SELECTIONS</span><h2 id="drawer-title">Enquiry list <span id="drawer-count">(0)</span></h2></div><button type="button" class="icon-button close-button" id="close-drawer" aria-label="Close enquiry list"><svg class="icon"><use href="#i-x"></use></svg></button></div><div class="drawer-content"><div id="enquiry-items" class="enquiry-items"></div><label class="message-label" for="enquiry-note">Add a question or note <span>(optional)</span></label><textarea id="enquiry-note" rows="4" maxlength="1200" placeholder="E.g. Please confirm ingredients, availability and how to use these products."></textarea></div><div class="drawer-bottom"><p class="drawer-help" id="drawer-help">Your list is saved only in this browser. No order has been placed.</p><button type="button" class="button button-primary full-width" id="share-whatsapp">Share via WhatsApp <svg class="icon"><use href="#i-arrow-up-right"></use></svg></button><button type="button" class="button button-outline full-width" id="copy-enquiry">Copy enquiry message <svg class="icon"><use href="#i-arrow-right"></use></svg></button></div></aside>
+
+  <div class="product-modal" id="product-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true" tabindex="-1"><div class="modal-card"><button type="button" class="icon-button close-button modal-close" id="close-modal" aria-label="Close product details"><svg class="icon"><use href="#i-x"></use></svg></button><div class="modal-image" id="modal-image"></div><div class="modal-copy"><span class="eyebrow eyebrow-dark" id="modal-category"></span><h2 id="modal-title"></h2><p id="modal-description"></p><div class="modal-advice"><svg class="icon"><use href="#i-message"></use></svg><p>Ask for ingredients, directions, precautions, availability, and pricing before buying.</p></div><button type="button" class="button button-primary" id="modal-add">Add to enquiry <svg class="icon"><use href="#i-arrow-up-right"></use></svg></button><p class="modal-caption">Product illustrations are for browsing. Packaging may vary.</p></div></div></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="js/config.js"></script>
+  <script src="js/products.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
